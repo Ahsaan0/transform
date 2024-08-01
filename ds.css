@@ -1,0 +1,230 @@
+.gh {
+    margin: 30px auto;
+    max-width: 1000px;
+    width: 90vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+
+
+  .box {
+    width: calc(20%);
+    margin: 20px 20px;
+    background: black;
+    cursor: pointer;
+    color: lawngreen;
+    text-align: center;
+    line-height: 130px;
+  }
+
+
+  .blue {
+    background-color: rgba(41, 48, 48, 0.082);
+  }
+
+
+  .scale {
+    transform: scaleX(1);
+    transition: transform 0.5s ease ease-in-out;
+  }
+
+
+  .box:hover .scale {
+    transform: scaleX(2);
+    color: aqua;
+    background-color: brown;
+
+  }
+
+  .scale {
+    transform: scaleY(1);
+    transition: transform 0.5s ease ease-in;
+  }
+
+
+  .box:hover .scale {
+    transform: scaleY(2);
+    color: palevioletred;
+    background-color: maroon;
+  }
+
+  .scale {
+    transform: scale(1, 1);
+    transition: transform 0.5s ease;
+  }
+
+
+  .box:hover .scale {
+    transform: scale(1.4, 1.4);
+    color: black;
+    background-color: magenta;
+  }
+
+  .translateX {
+    transform: translateX(1);
+    transition: transform 0.5s ease;
+  }
+
+
+  .box:hover .translateX {
+    transform: translateX(2em);
+    color: #999;
+    background-color: tomato;
+  }
+
+  .translateY {
+    transform: translateY(1);
+    transition: transform 0.5s ease;
+  }
+
+
+  .box:hover .translateY {
+    transform: translateY(2em);
+    color: #888;
+    background-color: blue;
+  }
+
+  .translate {
+    transform: translate(6,6 );
+    transition: transform 0.5s ease;
+  }
+
+
+  .box:hover .translate {
+    transform: translate(6em, 6em);
+    color: #555;
+    background-color: limegreen;
+  }
+
+  .matrix {
+    transform: matrix(2, 2, 2, 2);
+    transition: transform 0.5s ease ease-in-out;
+  }
+
+  .box:hover .matrix {
+    transform: matrix(1, -1, 0, 1, 1, 1);
+    color:black;
+    background-color: lightskyblue;
+  }
+
+  .rotate {
+    transform: rotate(0);
+    transition: transform 0.5s ease;
+  }
+
+  .box:hover .rotate {
+    transform: rotate(360deg);
+    color: brown;
+  }
+
+  .skew {
+    transform: skew(1, 1);
+    transition: transform 0.5s ease-in;
+    transition-delay: 1s;
+  }
+
+  .box:hover .skew {
+    transform: skew(30deg, 20deg);
+    color: chocolate;
+    background-color: aqua;
+
+  }
+
+  .skewX {
+    transform: skewX(1);
+    transition: transform 0.5s ease ease-out;
+  }
+
+  .box:hover .skewX {
+    transform: skewX(45deg);
+    color: blueviolet;
+    background-color: darkmagenta;
+
+
+  }
+
+  .skewY {
+    transform: skewY(1);
+    transition: transform 0.5s ease ease-in-out;
+  }
+
+  .box:hover .skewY {
+    transform: skewY(45deg);
+    color: lightcoral;
+    background-color:navy;
+
+  }
+
+  .matrix3d {
+    transform: matrix3d(1);
+    transition: transform 0.5s ease;
+  }
+
+  .box:hover .matrix3d {
+   color: black;
+   background-color: darksalmon;
+    transform: matrix3d(0.85355339059327, 0.4999999999999999, 0.14644660940672619, 0, -0.4999999999999999, 0.7071067811865476, 0.4999999999999999, 0, 0.14644660940672619, -0.4999999999999999, 0.8535533905932737, 0, 22.62994231491119, -20.3223304703363, 101.3700576850888, 1)
+  }
+
+  .translate3d {
+    transform: translate3d(1px, 1px, 1);
+    transition: transform 0.5s ease inherit;
+  }
+
+  .box:hover .translate3d {
+    transform: translate3d(1px, 1px, 50px) rotate3d(3, 4, 4, 80deg);
+    color: firebrick;
+    background-color: yellowgreen;
+
+  }
+
+  .rotateY {
+    transform: perspective(2) scaleZ(1) rotateY(45deg);
+    transition: transform 0.5s ease;
+  }
+
+  .box:hover .rotateY {
+    transform: perspective(500px) scaleZ(2) rotateY(45deg);
+    color: violet;
+    background-color: chocolate;
+  }
+
+  .rotateX {
+    transform: perspective(1) scaleZ(1) rotateX(0deg);
+    transition: transform 0.5s ease;
+  }
+
+  .box:hover .rotateX {
+    transform: perspective(500px) scaleZ(2) rotateX(45deg);
+    color: lightslategrey;
+    background-color: gray;
+  }
+
+  .translateZ {
+    transform: translateZ(1px);
+    transition: transform 0.5s all;
+  }
+
+  .box:hover .translateZ {
+    transform: rotate3d(3, 2, 2, 90deg) translateZ(50px);
+    color: navy;
+    background-color: cyan;
+  }
+  
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+    box {
+      width: calc(20%);
+      margin: 20px 20px;
+      background: black;
+      cursor: pointer;
+      color: lawngreen;
+      text-align: center;
+      line-height: 130px;
+    }
+  
+  }
+}
